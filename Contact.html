@@ -1,44 +1,42 @@
 <!doctype html>
-    <link rel="stylesheet" type="text/css" href="Assets/css/style.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <header>
-            <nav>
-                <div>
-                    <h1>Stuart Lamble</h1>
-                </div>
-                <div">
-                    <p><a href="contact.html" title="Contact me page">Contact</a></p>
-                </div>
-    
-                <div class="links2">
-                    <p><a href="portfolio.html" title="Project portfolio">Portfolio</a></p>
-                </div>
-                <div class="links1">
-                    <p><a href="index.html" title="Learn about me">About</a></p>
-                </div>
-            </nav>  
-        </header>
-
-    <body>
-        <section class="content">
-            <h2>Contact Me</h2>
-            <label class="form">Name</label>
-            <br>
-            <input type="text" class="form" placeholder="John Smith" title="Enter your name">
-            <br>
-            <label class="form">Email</label>
-            <br>
-            <input type ="text" class="form" placeholder="example@gmail.com" title="Enter your email">
-            <br>
-            <label id="message">Message</label>
-            <br>
-            <input type ="text" id="message" title="Enter your messege">
-            <br>
-            <button id="button" title="Submit your messege">Submit</button>
-
-        </section>
-            <br>
-        <br>
-        <footer class="footer">Copyright &#9400;</footer>
+        <nav style="background-color: white; border-bottom: 2px solid #cccccc;">
+                <h1 class="navbar-brand" style="background-color: #4aaaa5; padding: 12px; color: white; margin:0;">Stuart Lamble</h1>
+            <ul class="nav justify-content-end" style="float: right;" >
+                <li class="nav-item">
+                    <a class="nav-link" href="Index.html" title="Learn About Me" style="border-right: 2px solid #cccccc;">About</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="Portfolio.html" title="Project portfolio" style="border-right: 2px solid #cccccc;">Portfolio</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="Contact.html" title="Contact Me">Contact Me</a>
+            </ul>
+        </nav>  
+    </header>
+    <body background="Assets/topography.png">
+        <div class="row">
+            <div class="col-sm-2 col-xs-1"></div>
+            <div class="col-sm-8 col-xs-10" style="background-color: #fff; border: 2px solid #dddddd; margin-top:10px";>
+                <h2 class="col-12", style="color: #4aaaa5; border-bottom: 4px solid #dddddd";>Contact Me</h2>
+                <form>
+                    <div class="form-group">
+                            <label for="exampleFormControlInput1">First name</label>
+                            <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="John Smith">
+                            </div>
+                    <div class="form-group">
+                      <label for="exampleFormControlInput1">Email address</label>
+                      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleFormControlTextarea1">Your Message</label>
+                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="9"></textarea>
+                    </div>
+                    <button type="button" class="btn btn-primary" style="margin-bottom: 10px; background-color: #4aaaa5; color: white; border: 0px;">Submit</button>
+                  </form>
+        </div>
+        <nav class="navbar fixed-bottom" style="background-color: #666666; color: white;
+        text-align: center; border-top: 8px solid #4aaaa5";> Copyright &#9400;
+        </nav>
     </body>
 </html>
